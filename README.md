@@ -1,4 +1,4 @@
-# Portfolio: Sim Tero Jao
+# Portfolio
 
 A ReactJS project.
 An online profile and portfolio.
