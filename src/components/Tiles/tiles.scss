@@ -1,0 +1,55 @@
+.WorkTiles {
+  border: 1px solid gainsboro;
+  margin: 21px;
+  width: 294px;
+  max-width: 100%;
+  box-shadow: 0 0 7px 3px gainsboro;
+  overflow: hidden;
+
+  .logo-wrapper {
+    overflow: hidden;
+
+    a.logo { cursor: pointer}
+
+    .logo {
+      transition: all ease-in-out 300ms;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .details {
+    border-top: 1px solid gainsboro;
+    padding: 14px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+
+    > * { text-align: right; }
+
+    .read-more {
+      cursor: pointer;
+      margin-top: 7px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #ff9900;
+    }
+  }
+
+  h3,
+  h5 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .WorkTiles {
+    margin: 7px;
+  }
+}

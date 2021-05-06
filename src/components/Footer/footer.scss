@@ -1,0 +1,22 @@
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .current-page {
+    color: #ff9900;
+    font-weight: bolder;
+
+    .bybyn {
+      color: #000;
+      font-weight: normal;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    .current-page {
+    }
+  }
+}

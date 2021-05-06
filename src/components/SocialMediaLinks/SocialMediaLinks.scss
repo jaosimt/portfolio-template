@@ -1,0 +1,69 @@
+@mixin transition($transition, $duration) {
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    transition-duration: $duration;
+
+    -webkit-transition-timing-function: $transition;
+    -moz-transition-timing-function: $transition;
+    -ms-transition-timing-function: $transition;
+    -o-transition-timing-function: $transition;
+    transition-timing-function: $transition;
+}
+
+.SocialMediaLinks {
+    display: flex;
+    
+    > div:not(:last-child) { margin-right: 7px; }
+    > div {
+        display: inline-block;
+        @include transition(linear, 0.3s);
+        float: left;
+        -webkit-box-shadow: 0 0 7px white;
+        -moz-box-shadow: 0 0 7px white;
+        box-shadow: 0 0 7px white;
+        border-radius: 7px;
+        border: 1px solid #ff9900;
+        overflow: hidden;
+    }
+    
+    > div:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    .facebook {
+        background: transparent url("./facebook.jpg") no-repeat center;
+    }
+    
+    .instagram {
+        background: transparent url("./instagram.jpg") no-repeat center;
+    }
+    
+    .twitter {
+        background: transparent url("./twitter.jpg") no-repeat center;
+    }
+    
+    .linkedin {
+        background: transparent url("./linkedin.jpg") no-repeat center;
+    }
+    
+    .youtube {
+        background: transparent url("./youtube.jpg") no-repeat center;
+    }
+    
+    .facebook,
+    .instagram,
+    .twitter,
+    .youtube,
+    .linkedin {
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .SocialMediaLinks {
+        > div {
+            margin: 3px;
+        }
+    }
+}

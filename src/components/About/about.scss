@@ -1,0 +1,61 @@
+div.About {
+  padding-bottom: 14px;
+
+  .wrapper {
+    .banner {
+      transition: all ease-in-out 3000ms;
+      height: 294px;
+      background: transparent url(./about.jpeg) no-repeat top center;
+      background-size: cover;
+      margin: 0 -14px 14px -14px;
+      color: #ff9900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      opacity: 0.7;
+      font-family: Tahoma-Bold, Tahoma, serif;
+      font-weight: bold;
+      font-size: 62px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 42px;
+
+      h1,
+      p { font-family: Courier, "Courier New", monospace, serif; }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 49px;
+      }
+
+      p {
+        padding: 0 21%;
+      }
+
+      img.award {
+        margin: 14px 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 847px) {
+  div.About {
+    .wrapper {
+      .banner { font-size: 49px; }
+
+      .content {
+        p {
+          padding: 0 7%;
+        }
+      }
+    }
+  }
+}
